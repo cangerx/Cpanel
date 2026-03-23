@@ -1,10 +1,10 @@
-const revealNodes = document.querySelectorAll('.reveal');
+const revealNodes = document.querySelectorAll('.cp-reveal');
 
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        entry.target.classList.add('is-visible');
+        entry.target.classList.add('cp-is-visible');
         observer.unobserve(entry.target);
       }
     });
@@ -16,7 +16,7 @@ const observer = new IntersectionObserver(
 
 revealNodes.forEach((node) => observer.observe(node));
 
-const heroVideo = document.querySelector('.hero-video');
+const heroVideo = document.querySelector('.cp-hero-video');
 if (heroVideo) {
   const promise = heroVideo.play();
   if (promise && typeof promise.catch === 'function') {
