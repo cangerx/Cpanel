@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cpanel 一键本地部署龙虾</title>
+    <meta
+      name="description"
+      content="Cpanel 一键本地部署龙虾，使用本地草地视频作为首屏背景的官方风格静态首页。"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="#hero" aria-label="Cpanel 首页">
+          <span class="brand-mark" aria-hidden="true">
+            <span></span><span></span><span></span><span></span>
+          </span>
+          <span class="brand-word">Cpanel</span>
+        </a>
+
+        <nav class="site-nav" aria-label="主导航">
+          <a href="#hero">Star us</a>
+          <a href="#hero">社区</a>
+          <a href="#hero">中文</a>
+          <a class="download-button" href="#hero">下载 Mac 客户端</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero" id="hero">
+          <div class="hero-media" data-hero-media>
+            <video
+              class="hero-video"
+              autoplay
+              muted
+              loop
+              playsinline
+              preload="metadata"
+              poster="./assets/hero-poster.png"
+              aria-label="草地花海视频背景"
+            >
+              <source src="./assets/hero-video.mp4" type="video/mp4" />
+            </video>
+            <div class="hero-media-fade"></div>
+            <div class="hero-media-glow"></div>
+          </div>
+
+          <div class="hero-copy">
+            <h1>Cpanel 一键本地部署龙虾</h1>
+            <p class="hero-description">
+              模型自由选，数据 100% 本地，完全免费。1 分钟安装，直接在微信/飞书/Slack / Discord 里使用
+            </p>
+            <div class="hero-actions">
+              <a class="primary-button" href="#hero">下载 Mac 客户端</a>
+              <a class="secondary-button" href="#hero">Star us</a>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
