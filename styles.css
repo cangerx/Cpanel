@@ -338,3 +338,113 @@
     transform: scale(1.08);
   }
 }
+
+@media (max-width: 430px) {
+  .cp-page-shell {
+    overflow-x: hidden;
+    overflow-y: visible;
+  }
+
+  .cp-site-header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 10px 12px 0;
+    min-height: 44px;
+  }
+
+  .cp-brand {
+    min-width: 0;
+  }
+
+  .cp-brand-word {
+    font-size: 0.84rem;
+  }
+
+  .cp-site-nav {
+    width: auto;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    gap: 10px;
+    font-size: 0.76rem;
+    flex-shrink: 0;
+  }
+
+  .cp-nav-link {
+    display: inline-flex;
+    align-items: center;
+    min-height: 28px;
+    letter-spacing: -0.015em;
+  }
+
+  .cp-download-button {
+    display: none;
+  }
+
+  .cp-hero {
+    min-height: calc(100svh - 54px);
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: visible;
+  }
+
+  .cp-hero-copy {
+    position: absolute;
+    z-index: 3;
+    top: clamp(168px, 24svh, 220px);
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(100%, 348px);
+    margin: 0;
+    padding: 0 16px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cp-hero-title {
+    font-size: clamp(2.06rem, 9.6vw, 2.74rem);
+    line-height: 1.08;
+    letter-spacing: -0.04em;
+  }
+
+  .cp-hero-description {
+    max-width: 100%;
+    margin-top: 12px;
+    font-size: 0.9rem;
+    line-height: 1.56;
+  }
+
+  .cp-hero-actions {
+    width: min(100%, 248px);
+    align-items: stretch;
+    gap: 9px;
+    margin: 16px auto 0;
+  }
+
+  .cp-primary-button,
+  .cp-secondary-button {
+    width: 100%;
+    min-width: 0;
+    min-height: 42px;
+    padding: 0 18px;
+  }
+
+  .cp-hero-media {
+    height: calc(100svh - 54px);
+    min-height: 520px;
+  }
+
+  .cp-hero-video {
+    object-position: center 74%;
+    transform: scale(1.05);
+  }
+
+  .cp-hero-media-fade {
+    background:
+      linear-gradient(180deg, rgba(248, 248, 243, 0.72) 0%, rgba(248, 248, 243, 0.28) 12%, rgba(248, 248, 243, 0.08) 20%, rgba(248, 248, 243, 0) 30%),
+      linear-gradient(180deg, rgba(255, 255, 255, 0) 82%, rgba(248, 248, 243, 0.08) 100%);
+  }
+}
