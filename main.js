@@ -43,6 +43,10 @@ if (installModal && openInstallButtons.length) {
 
     if (shouldOpen) {
       installModal.hidden = false;
+      const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+      if (scrollbarWidth > 0) {
+        document.body.style.paddingRight = `${scrollbarWidth}px`;
+      }
       document.body.style.overflow = 'hidden';
       requestAnimationFrame(() => {
         installModal.classList.add('cp-modal-visible');
@@ -57,6 +61,7 @@ if (installModal && openInstallButtons.length) {
       installModal.hidden = true;
       installModal.classList.remove('cp-modal-closing');
       document.body.style.overflow = '';
+      document.body.style.paddingRight = '';
       closeTimer = null;
     }, closeAnimationMs);
   };

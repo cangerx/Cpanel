@@ -93,7 +93,7 @@
   padding: 0 18px;
   border-radius: 999px;
   font-weight: 500;
-  transition: transform 160ms ease, opacity 160ms ease, background 160ms ease;
+  transition: opacity 160ms ease, background 160ms ease;
   white-space: nowrap;
 }
 
@@ -107,7 +107,7 @@
 .cp-download-button:hover,
 .cp-primary-button:hover,
 .cp-secondary-button:hover {
-  transform: translateY(-1px);
+  opacity: 0.94;
 }
 
 .cp-hero {
