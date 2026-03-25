@@ -30,7 +30,13 @@
           <a class="cp-nav-link" href="#hero">Star us</a>
           <a class="cp-nav-link" href="#hero">社区</a>
           <a class="cp-nav-link" href="#hero">中文</a>
-          <a class="cp-download-button" href="#hero">下载 Mac 客户端</a>
+          <a
+            class="cp-download-button"
+            href="https://github.com/cangerx/clawpanel/releases/tag/v1.0.1"
+            target="_blank"
+            rel="noopener noreferrer"
+            >一键下载</a
+          >
         </nav>
       </header>
 
@@ -59,12 +65,45 @@
               模型自由选，数据 100% 本地，完全免费。1 分钟安装，直接在微信/飞书/Slack / Discord 里使用
             </p>
             <div class="cp-hero-actions">
-              <a class="cp-primary-button" href="#hero">下载 Mac 客户端</a>
+              <a class="cp-primary-button" href="#" data-open-install-modal>一键安装</a>
               <a class="cp-secondary-button" href="#hero">Star us</a>
             </div>
           </div>
         </section>
       </main>
+    </div>
+
+    <div class="cp-modal" data-install-modal hidden>
+      <div class="cp-modal-backdrop" data-close-install-modal></div>
+      <div class="cp-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="install-modal-title">
+        <button class="cp-modal-close" type="button" aria-label="关闭弹窗" data-close-install-modal>&times;</button>
+        <h2 class="cp-modal-title" id="install-modal-title">一键安装</h2>
+        <p class="cp-modal-intro">这个脚本 推荐使用统一安装脚本部署或更新 Cpanel Web 版：</p>
+
+        <div class="cp-modal-section">
+          <p class="cp-modal-label">海外用户（GitHub）</p>
+          <pre class="cp-modal-code"><code>curl -fsSL https://raw.githubusercontent.com/cangerx/clawpanel/main/deploy.sh | bash</code></pre>
+          <button
+            class="cp-copy-button"
+            type="button"
+            data-copy-command="curl -fsSL https://raw.githubusercontent.com/cangerx/clawpanel/main/deploy.sh | bash"
+          >
+            复制命令
+          </button>
+        </div>
+
+        <div class="cp-modal-section">
+          <p class="cp-modal-label">国内用户（Gitee）</p>
+          <pre class="cp-modal-code"><code>curl -fsSL https://gitee.com/cangerx/clawpanel/raw/main/deploy.sh | bash</code></pre>
+          <button
+            class="cp-copy-button"
+            type="button"
+            data-copy-command="curl -fsSL https://gitee.com/cangerx/clawpanel/raw/main/deploy.sh | bash"
+          >
+            复制命令
+          </button>
+        </div>
+      </div>
     </div>
 
     <script src="./main.js"></script>
